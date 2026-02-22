@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>↑LRIGHT UP↑ | Kids & Teens Dance Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #FF00E5 0%, #00D1FF 100%);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Accordion Styles */
+        .faq-details[open] .faq-summary svg {
+            transform: rotate(180deg);
+        }
+        .faq-summary::-webkit-details-marker {
+            display: none;
+        }
+        /* Scrollbar styling for attention box */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-2xl font-black font-montserrat tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">
+                ↑LRIGHT UP↑
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold">
+                <a href="#about" class="hover:text-pink-500 transition-colors">ABOUT</a>
+                <a href="#entry" class="hover:text-pink-500 transition-colors">ENTRY</a>
+                <a href="#faq" class="hover:text-pink-500 transition-colors">FAQ</a>
+            </div>
+            <a href="#entry" class="bg-black text-white px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform active:scale-95">
+                ENTRY
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[95vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-gradient opacity-10"></div>
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 2s"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block px-4 py-1 mb-8 rounded-full bg-pink-100 text-pink-600 text-sm font-bold tracking-widest uppercase">
+                Dance Event: ↑LRIGHT UP↑
+            </span>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
+                <div class="flex items-center space-x-2">
+                    <span class="text-gray-400 font-montserrat font-bold italic">「LIGHT UP」=</span>
+                    <span class="text-xl md:text-3xl font-black text-pink-500">輝く↑</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-gray-400 font-montserrat font-bold italic">「RIGHT UP」=</span>
+                    <span class="text-xl md:text-3xl font-black text-cyan-500">上がる↑</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-gray-400 font-montserrat font-bold italic">「NO.1」=</span>
+                    <span class="text-xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 border-b-2 border-pink-500/30">みんな1番↑</span>
+                </div>
+            </div>
+
+            <h1 class="font-montserrat text-7xl md:text-[10rem] font-black mb-8 leading-none tracking-tighter">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500">↑LRIGHT UP↑</span>
+            </h1>
+
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-xl md:text-3xl font-bold text-gray-800 leading-tight mb-4">
+                    すべての出演者が輝いて、気持ちも盛り上がって、<br class="hidden md:block">ひとりひとりが主役になれる。
+                </p>
+                <p class="text-gray-500 md:text-xl font-medium">
+                    そんなイベントを目指しています。
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#entry" class="bg-gradient-to-r from-pink-500 to-cyan-500 text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl shadow-pink-200 hover:scale-105 transition-transform">
+                    出演エントリーはこちら
+                </a>
+                <a href="#about" class="bg-white text-gray-900 border-2 border-gray-200 px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-50 transition-colors">
+                    イベント詳細を見る
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight">
+                        ダンスを通じて、<br class="md:hidden">誰もが主役になれる場所。
+                    </h2>
+                    
+                    <ul class="space-y-6 font-bold text-gray-800 mb-10">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-pink-500 text-xl">●</span>
+                            <span class="leading-relaxed text-lg">ダンサーやエンターティナーに活躍、活動の場を作りたい。</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-pink-500 text-xl">●</span>
+                            <span class="leading-relaxed text-lg">生徒さんの日々のダンスレッスンの成果を発揮して頂けるひとつの良い機会に。</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-pink-500 text-xl">●</span>
+                            <span class="leading-relaxed text-lg">コンテストなど様々な企画も入れ、輝き↑上がる↑。</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                        <p class="text-gray-700 leading-relaxed font-bold italic">
+                            エンターテーメントを愛する全ての人々が「年齢・性別・経験など」を問わず、全員が明るく！楽しく！笑顔で！楽しんで頂ける環境づくりを目指しております。
+                        </p>
+                    </div>
+                </div>
+                <div class="relative order-1 md:order-2">
+                    <div class="aspect-square bg-gray-100 rounded-3xl overflow-hidden shadow-2xl rotate-3 flex items-center justify-center p-4">
+                        <!-- Raw content URL used for image source -->
+                        <img src="https://raw.githubusercontent.com/compactdisk0828-DiSKSYSTEM/LRIGHTUP/main/lright.png" alt="↑LRIGHT UP↑ Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-cyan-400 rounded-2xl flex items-center justify-center p-6 -rotate-6 shadow-xl text-center">
+                        <p class="text-white font-bold leading-tight">
+                            エンターテインメントを<br>愛する全ての人へ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTRY Section -->
+    <section id="entry" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-pink-500/10 blur-3xl rounded-full"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-cyan-500/10 blur-3xl rounded-full"></div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <h2 class="font-montserrat text-4xl md:text-5xl font-black text-center mb-4 uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">ENTRY & SCHEDULE</h2>
+            <p class="text-center text-gray-400 mb-10 font-bold">出演エントリー・開催スケジュール詳細</p>
+
+            <!-- Main Event Box -->
+            <div class="bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 p-8 md:p-12 mb-8 shadow-2xl">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
+                    <div>
+                        <span class="bg-pink-600 text-white px-4 py-1 rounded-full text-xs font-bold mb-3 inline-block tracking-widest">NEXT EVENT</span>
+                        <h3 class="text-3xl md:text-4xl font-black leading-tight mt-2">
+                            4/26(日) ↑LRIGHT UP↑<br>
+                            <span class="text-pink-500">「2026春(🌸4周年🌸)」</span>
+                        </h3>
+                        <p class="text-xl text-gray-300 font-bold mt-2">@新宿FACE (1DAY)</p>
+                    </div>
+                    <div class="text-left md:text-right">
+                        <p class="text-sm text-gray-400 uppercase font-montserrat font-bold">Organized by</p>
+                        <p class="text-2xl font-black tracking-widest text-white">FUJIEDA</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Showcase Section -->
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/5 hover:border-pink-500/50 transition-colors group">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-pink-500 font-montserrat font-black text-xl">SHOWCASE</span>
+                            <span class="text-xs bg-white/10 px-2 py-1 rounded text-gray-300">第一部</span>
+                        </div>
+                        <div class="text-2xl font-black mb-2">14:30～19:00</div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">日頃の成果を存分に発揮するパフォーマンスステージ！</p>
+                        
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-500 mb-1">締め切り</p>
+                            <p class="text-xl font-black text-pink-400 underline decoration-2 underline-offset-4">2/20(金)まで</p>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="text-sm text-gray-500 mb-1">Main MC</p>
+                            <p class="text-lg font-bold flex items-center">
+                                🎙️ MC パプリカ <span class="text-xs ml-2 text-gray-400">(吉本興業所属)</span>
+                            </p>
+                        </div>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecy9p6P7665Y3Y-4H1R3uB_hB3n6vD7N8i5eW99Xm5h6o5gQ/viewform" target="_blank" class="block w-full text-center bg-white text-black py-4 rounded-xl font-bold hover:bg-pink-500 hover:text-white transition-all transform group-hover:-translate-y-1">
+                            SHOWCASE部門：詳細・申込
+                        </a>
+                    </div>
+
+                    <!-- Contest Section -->
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/5 hover:border-cyan-500/50 transition-colors group">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-cyan-400 font-montserrat font-black text-xl">CONTEST (MIX)</span>
+                            <span class="text-xs bg-white/10 px-2 py-1 rounded text-gray-300">第二部</span>
+                        </div>
+                        <div class="text-2xl font-black mb-2">19:00～21:00</div>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">輝きを競い合うコンテスト！MIX部門で頂点を目指せ！</p>
+                        
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-500 mb-1">締め切り</p>
+                            <ul class="text-sm font-bold space-y-1">
+                                <li class="text-cyan-400">第1次：3/26(木)まで</li>
+                                <li class="text-gray-300">第2次：3/27(金)～4/12(日)</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="text-sm text-gray-500 mb-1">Main MC</p>
+                            <p class="text-lg font-bold flex items-center">
+                                🎙️ MC FUJIEDA
+                            </p>
+                        </div>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecy9p6P7665Y3Y-4H1R3uB_hB3n6vD7N8i5eW99Xm5h6o5gQ/viewform" target="_blank" class="block w-full text-center bg-cyan-600 text-white py-4 rounded-xl font-bold hover:bg-cyan-500 transition-all transform group-hover:-translate-y-1">
+                            ダンスコンテスト部門：詳細・申込
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Event Info -->
+            <div class="bg-gradient-to-r from-pink-900/40 to-cyan-900/40 rounded-3xl p-8 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-3xl animate-pulse">🌻</div>
+                    <div>
+                        <h4 class="text-2xl font-black text-white italic">夏開催決定！</h4>
+                        <p class="text-gray-300 font-bold">8/22(土) ↑LRIGHT UP↑「2026夏(🌻サマー🌻)」</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-bold bg-white/10 px-4 py-2 rounded-lg">@新宿FACE(1DAY)</p>
+                </div>
+            </div>
+
+            <!-- Attention Section -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="bg-white/10 px-6 py-4 flex items-center justify-between border-b border-white/10">
+                        <span class="text-sm font-bold flex items-center tracking-wider text-yellow-400">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            ご出演・ご観覧に関する注意事項
+                        </span>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[10px] text-gray-400 bg-black/30 px-2 py-0.5 rounded-full uppercase font-montserrat tracking-widest">Scroll to read all</span>
+                        </div>
+                    </div>
+                    <div class="h-96 overflow-y-auto p-6 text-[14px] text-gray-300 custom-scrollbar space-y-8 bg-black/30">
+                        
+                        <!-- 1. ステージについて -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">①</span>ステージについて
+                            </p>
+                            <div class="pl-4 space-y-3">
+                                <p class="leading-relaxed">・ステージ裏通路あり、作品中の通り抜け可能です。<br>・上手下手、ステージ前方のみ両方から…出はけ可能です。</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                                    <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                                        <span class="text-pink-400 font-bold block mb-1">● 間口：約9m</span>
+                                        <p class="text-[11px] text-gray-400">場ミリ…上手下手：各5番ずつ。しっかり立てるのは4.5番までとお考え下さい。</p>
+                                    </div>
+                                    <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                                        <span class="text-pink-400 font-bold block mb-1">● 奥行：約6m</span>
+                                        <p class="text-[11px] text-gray-400">6.72mに後ろに照明機材1m弱が配置されます。</p>
+                                    </div>
+                                    <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                                        <span class="text-pink-400 font-bold block mb-1">● ステージ高さ：約1m</span>
+                                    </div>
+                                    <div class="bg-white/5 p-3 rounded-lg border border-white/5">
+                                        <span class="text-pink-400 font-bold block mb-1">● 天井高さ：約3m</span>
+                                        <p class="text-[11px] text-gray-400">ステージ上から天井までの高さです。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. 照明について -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">②</span>照明について
+                            </p>
+                            <div class="pl-4">
+                                <p>照明オペレーターにお任せしております。照明プランは出せません。</p>
+                            </div>
+                        </div>
+
+                        <!-- 3. 保険について -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">③</span>レクリエーション保険について
+                            </p>
+                            <div class="pl-4 space-y-4">
+                                <p class="leading-relaxed">↑LRIGHT UP↑ではご出演者の皆様に、安全で安心なイベントを目指しております。<br>万が一、ご出演者様がイベント中に会場内でケガをされた場合などに対し、ご出演者様にレクリエーション保険に加入しております。</p>
+                                <div class="bg-cyan-900/30 p-4 rounded-xl border border-cyan-500/30 grid grid-cols-3 gap-2 text-center">
+                                    <div><p class="text-[10px] text-cyan-400 uppercase font-bold">死亡保障</p><p class="text-lg font-black">300<span class="text-xs ml-0.5">万円</span></p></div>
+                                    <div><p class="text-[10px] text-cyan-400 uppercase font-bold">入院保障</p><p class="text-lg font-black">4,000<span class="text-xs ml-0.5">円</span></p></div>
+                                    <div><p class="text-[10px] text-cyan-400 uppercase font-bold">通院保障</p><p class="text-lg font-black">2,500<span class="text-xs ml-0.5">円</span></p></div>
+                                </div>
+                                <ul class="text-xs space-y-1 text-gray-400 list-disc pl-4">
+                                    <li>保障内容は、場内でのお怪我の保障になります。お怪我された際は、当日スタッフにお伝え下さい。</li>
+                                    <li>新型コロナ感染の場合には適応されません。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 4. キャンセルについて -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">④</span>キャンセルについて
+                            </p>
+                            <div class="pl-4 space-y-3">
+                                <p>ご出演者様からのご希望でご出演をキャンセルをされる場合は下記キャンセル料金がかかります。</p>
+                                <div class="space-y-2">
+                                    <div class="bg-red-900/20 p-4 rounded-lg border border-red-500/20">
+                                        <p class="text-red-400 font-bold text-sm mb-1">● 本番1か月～2週間未満前でのキャンセル</p>
+                                        <p class="text-xs leading-relaxed">⇒ ①参加費5,000円 ＋ ②チケットノルマ代金の50％ お支払いいただきます。</p>
+                                    </div>
+                                    <div class="bg-red-900/40 p-4 rounded-lg border border-red-500/40">
+                                        <p class="text-red-400 font-bold text-sm mb-1">● 本番2週間前～当日でのキャンセル</p>
+                                        <p class="text-xs font-bold leading-relaxed">⇒ ご入金額の100％ お支払いいただきます。</p>
+                                    </div>
+                                </div>
+                                <p class="text-[11px] text-gray-500">※お1人様キャンセルの場合もお1人様分の上記キャンセル料金が掛かります。</p>
+                            </div>
+                        </div>
+
+                        <!-- 5. 写真・動画について -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">⑤</span>写真、動画について
+                            </p>
+                            <div class="pl-4">
+                                <p class="leading-relaxed text-gray-300">ホームページやSNSでの掲載を始め、各種媒体の取材なども受け付けますので、イベント側が撮影した参加者の写真、動画を使用させて頂く場合がございます。<br>この点をご了承いただいていることを前提として、ご参加いただく事とさせていただきますので宜しくお願い申し上げます。</p>
+                            </div>
+                        </div>
+
+                        <!-- 6. 衣装の露出度について -->
+                        <div>
+                            <p class="text-white font-black mb-3 flex items-center text-base border-b border-white/10 pb-1">
+                                <span class="text-yellow-400 mr-2">⑥</span>衣装の露出度について
+                            </p>
+                            <div class="pl-4 space-y-4">
+                                <p class="leading-relaxed">会場は小さなお子様も多いイベントですので、淫らになり過ぎる事が無い様に配慮させて頂いております。<br>「作品の雰囲気、演出上」…露出度の高い衣装をお考えのご出演者様は、誠に恐縮では御座いますが、下記お問い合わせより必ず事前にご相談、ご一報頂けます様、宜しくお願い申し上げます。</p>
+                                
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-white/5 p-4 rounded-xl border-l-4 border-cyan-500">
+                                        <p class="font-bold text-cyan-400 mb-2 flex items-center">
+                                            <span class="mr-2">🕺</span>男性
+                                        </p>
+                                        <p class="text-xs">パンツ一枚はNGです。<br><span class="text-gray-500">(水着はOKです。)</span></p>
+                                    </div>
+                                    <div class="bg-white/5 p-4 rounded-xl border-l-4 border-pink-500">
+                                        <p class="font-bold text-pink-400 mb-2 flex items-center">
+                                            <span class="mr-2">💃</span>女性
+                                        </p>
+                                        <ul class="text-xs space-y-1">
+                                            <li>・上下…下着のみはNGです。</li>
+                                            <li>・TバックNGです。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="inline-flex items-center bg-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full text-white font-bold text-sm transition-all border border-white/20 group">
+                                    <span class="mr-2 italic tracking-widest">↓ お問い合わせはこちら</span>
+                                    <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-montserrat text-4xl font-black text-center mb-16 underline decoration-pink-500 decoration-8 underline-offset-8 uppercase tracking-tighter">Q&A</h2>
+            
+            <div class="space-y-4">
+                <details class="faq-details group bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <summary class="faq-summary list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-bold text-lg md:text-xl flex items-center">
+                            <span class="w-8 h-8 rounded-lg bg-pink-100 text-pink-500 flex items-center justify-center mr-4 shrink-0 font-montserrat">01</span>
+                            どんな内容のイベントですか？
+                        </h3>
+                        <svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50">
+                        ダンスの<span class="font-bold text-pink-600">SHOWCASE部門</span>と<span class="font-bold text-cyan-600">ダンスコンテスト部門</span>のイベントです。
+                    </div>
+                </details>
+
+                <details class="faq-details group bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <summary class="faq-summary list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-bold text-lg md:text-xl flex items-center">
+                            <span class="w-8 h-8 rounded-lg bg-pink-100 text-pink-500 flex items-center justify-center mr-4 shrink-0 font-montserrat">02</span>
+                            参加条件はありますか？
+                        </h3>
+                        <svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50">
+                        <span class="font-bold text-gray-900">初心者！年齢制限なし！オールジャンル！大歓迎♪♪</span>のイベントです。どなたでもお気軽にご参加ください。
+                    </div>
+                </details>
+
+                <details class="faq-details group bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <summary class="faq-summary list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <h3 class="font-bold text-lg md:text-xl flex items-center">
+                            <span class="w-8 h-8 rounded-lg bg-pink-100 text-pink-500 flex items-center justify-center mr-4 shrink-0 font-montserrat">03</span>
+                            開催頻度やテーマを教えてください
+                        </h3>
+                        <svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50">
+                        <span class="font-bold text-pink-600">「明るく♪楽しく♪安全に♪」</span>をテーマに、基本的には<span class="font-bold text-gray-900">春、夏、冬(CHRISTMAS)の「年間3回」</span>、2DAYSで開催していく予定です。
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="text-xl font-black font-montserrat text-white mb-2 tracking-tighter">↑LRIGHT UP↑</div>
+                <p class="text-xs">© 2024 ↑LRIGHT UP↑ Dance Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Bottom -->
+    <div class="md:hidden fixed bottom-6 left-6 right-6 z-50">
+        <div class="bg-black/90 backdrop-blur-lg rounded-full px-6 py-4 shadow-2xl flex justify-between items-center">
+            <a href="#about" class="text-white text-xs font-bold uppercase">About</a>
+            <a href="#entry" class="text-white text-xs font-bold uppercase">Entry</a>
+            <a href="#faq" class="text-white text-xs font-bold uppercase">FAQ</a>
+            <a href="#entry" class="bg-pink-500 text-white px-4 py-2 rounded-full text-xs font-black animate-pulse">
+                ENTRY
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
